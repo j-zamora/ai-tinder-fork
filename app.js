@@ -153,7 +153,7 @@ function addSwipeListeners(card) {
       if (now - lastTapTime < 300) {
         const imgs = card.querySelectorAll('.card__gallery-img');
         if (imgs.length > 1) {
-          let idx = parseInt(card.dataset.photoIndex || '0');
+          let idx = parseInt(card.dataset.photoIndex || '0', 10);
           const rect = card.getBoundingClientRect();
           idx = (e.clientX - rect.left) < rect.width / 2
             ? (idx - 1 + imgs.length) % imgs.length

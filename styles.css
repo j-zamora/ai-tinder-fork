@@ -153,7 +153,7 @@ body {
 .card--show-super .stamp--super { opacity: 1; }
 
 .card--dragging {
-  transition: none;
+  transition: transform 0s, opacity 0s;
   cursor: grabbing;
 }
 .card--exit-left {
